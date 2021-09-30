@@ -22,7 +22,6 @@ by [Brandon Booth](https://brandon-booth.com/index.php) - Fall 2020
 ## Terminal
 Show hidden files on Mac: ```Command+Shift+.```
 
-### Environment Variables
 To see environment variable enter the following into terminal:
 ```sh
 printenv
@@ -39,7 +38,8 @@ export db_user="username"
 Save changes:
 Enter ```Control+X```, then ```Y``` to save, then ```Enter``` to keep the same file name.
 
-## Git Command Line
+
+
 Check version of git installed on mac:
 ```sh
 git -–version
