@@ -15,6 +15,7 @@ by [Brandon Booth](https://brandon-booth.com/) - Fall 2021
 
 
 
+?factorial. --> will bring you to help page
 
 
 
