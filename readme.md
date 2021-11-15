@@ -28,9 +28,8 @@ x```sh
 x
 ```
 
-**Generate and assign Normal Distribution to sample_1 vector**
-sample_1 <- rnorm(n = n_1, mean = 2, sd = 4)
-
+**Generate and assign Normal Distribution to sample vector**
+sample <- rnorm(n = 10, mean = 2, sd = 4)
 
 
 
@@ -61,8 +60,6 @@ sim_ci <- function(n_1, n_2){
 
   #Generate uniform distribution
   sample_1 <- runif(n_1, 0, 5)
-  
-  #sample_2 <- rnorm(n = n_2, mean = 2, sd = 2)
   sample_2 <- runif(n_2, 0, 1)
   
   # 2. Run `t.test()`
