@@ -52,33 +52,32 @@ a\) **Edit the function `sim_ci()`** from lab to:
 * draw a sample of size `n_1` from a population 1, and
 * draw a sample of size `n_2` from a population 2, then 
 
-
 sim_ci <- function(n_1, n_2){
   delta <- 2.5-.5
 
-  # 1. Generate data
+  # 1) Generate data
 
   #Generate uniform distribution
   sample_1 <- runif(n_1, 0, 5)
   sample_2 <- runif(n_2, 0, 1)
   
-  # 2. Run `t.test()`
+  # 2) Run `t.test()`
   test_result <- t.test(x = sample_1, y = sample_2)
   
-  # 3. Extract CI
+  # 3) Extract CI
   ci <- test_result$conf.int
   
-  # 4. Check if delta is in CI
+  # 4) Check if delta is in CI
   lower <- ci[1]
   upper <- ci[2]
   lower < delta & upper > delta
   
   
 
-# Verify the function returns TRUE or FALSE
+# Run simulation function (returns TRUE or FALSE)
 sim_ci(n_1 = 5, n_2 = 5)
 
 
-#Replicate simulation
+#Replicate simulation and calculate proportion of values within the CI
 ci_values_valid <- replicate(50000, sim_ci(n_1 = 5, n_2 = 5))
 mean(ci_values_valid)
