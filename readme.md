@@ -24,7 +24,7 @@ R Documentation
 
 x: ```x```
 
-x```sh
+```sh
 x
 ```
 
@@ -85,6 +85,23 @@ mean(ci_values_valid)
 
 Permutation Test
 
+    #example with data created from scratch
+    cold <- c(1, 1, 1, 3) # number of o-ring incidents in launches < 18C
+    warm <- c(rep(0, times = 17), 1, 1, 2) # ditto above 18 degrees C
+
+    o_ring_data <- c(cold, warm)
+    
+    
+    #general formula
+    perm_tstat <- function(x, n1){
+      n <- length(x)
+      grp1_indices <- sample(1:n, size = n1, replace = FALSE)
+      grp1_perm <- x[grp1_indices] 
+      grp2_perm <- x[-grp1_indices] 
+      t.test(grp1_perm, grp2_perm)$statistic
+    }
+    
+    perm_tstat(o_ring_data, n1 = 4)
 
 Wilcoxon Rank-Sum Test (two independent samples)
 
