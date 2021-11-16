@@ -28,19 +28,19 @@ x: ```x```
 x
 ```
 
-Generate and assign Normal Distribution to sample vector
+## Generate and assign Normal Distribution to sample vector
 sample <- rnorm(n = 10, mean = 2, sd = 4)
 
 
 
-Student's t-Test
+## Student's t-Test
 t.test(x, y = NULL,
        alternative = c("two.sided", "less", "greater"),
        mu = 0, paired = FALSE, var.equal = FALSE,
        conf.level = 0.95, ...)
        
        
-R Simulation - Welch Two Sample t-test
+## R Simulation - Welch Two Sample t-test
 
 Consider two populations:
 
@@ -103,23 +103,18 @@ Permutation Test
     
     perm_tstat(o_ring_data, n1 = 4)
 
-##Wilcoxon Rank-Sum Test (two independent samples)
+## Wilcoxon Rank-Sum Test (two independent samples)
 
 
-##Wilcoxon Signed-Rank (single-sample or paired-sample data)
+## Wilcoxon Signed-Rank (single-sample or paired-sample data)
 
 
-##Levene's Test
+## Levene's Test
 
 
-##Bootstrap Methods (independent representative samples)
-
-
-
+## Bootstrap Methods (independent representative samples)
 
 
 
 
 
-
-Wi
