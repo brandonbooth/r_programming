@@ -28,7 +28,7 @@ x: ```x```
 x
 ```
 
-**Generate and assign Normal Distribution to sample vector**
+Generate and assign Normal Distribution to sample vector
 sample <- rnorm(n = 10, mean = 2, sd = 4)
 
 
@@ -40,7 +40,7 @@ t.test(x, y = NULL,
        conf.level = 0.95, ...)
        
        
-**R Simulation - Welch Two Sample t-test**
+R Simulation - Welch Two Sample t-test
 
 Consider two populations:
 
