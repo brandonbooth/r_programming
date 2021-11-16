@@ -81,3 +81,28 @@ sim_ci(n_1 = 5, n_2 = 5)
 #Replicate simulation and calculate proportion of values within the CI
 ci_values_valid <- replicate(50000, sim_ci(n_1 = 5, n_2 = 5))
 mean(ci_values_valid)
+
+
+Permutation Test
+
+
+Wilcoxon Rank-Sum Test (two independent samples)
+
+
+Wilcoxon Signed-Rank (single-sample or paired-sample data)
+
+
+Levene's Test
+
+
+Bootstrap Methods (independent representative samples)
+
+
+
+
+
+
+
+
+
+Wi
