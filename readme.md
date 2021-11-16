@@ -74,7 +74,7 @@ sim_ci <- function(n_1, n_2){
   
   
 
-# Run simulation function (returns TRUE or FALSE)
+## Run simulation function (returns TRUE or FALSE)
 sim_ci(n_1 = 5, n_2 = 5)
 
 
@@ -103,16 +103,16 @@ Permutation Test
     
     perm_tstat(o_ring_data, n1 = 4)
 
-Wilcoxon Rank-Sum Test (two independent samples)
+##Wilcoxon Rank-Sum Test (two independent samples)
 
 
-Wilcoxon Signed-Rank (single-sample or paired-sample data)
+##Wilcoxon Signed-Rank (single-sample or paired-sample data)
 
 
-Levene's Test
+##Levene's Test
 
 
-Bootstrap Methods (independent representative samples)
+##Bootstrap Methods (independent representative samples)
 
 
 
