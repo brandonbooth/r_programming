@@ -61,13 +61,13 @@ sim_ci <- function(n_1, n_2){
   sample_1 <- runif(n_1, 0, 5)
   sample_2 <- runif(n_2, 0, 1)
   
-  # 2) Run `t.test()`
+  2) Run `t.test()`
   test_result <- t.test(x = sample_1, y = sample_2)
   
-  # 3) Extract CI
+  3) Extract CI
   ci <- test_result$conf.int
   
-  # 4) Check if delta is in CI
+  4) Check if delta is in CI
   lower <- ci[1]
   upper <- ci[2]
   lower < delta & upper > delta
