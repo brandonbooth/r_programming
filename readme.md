@@ -55,7 +55,7 @@ a\) **Edit the function `sim_ci()`** from lab to:
 sim_ci <- function(n_1, n_2){
   delta <- 2.5-.5
 
-  # 1) Generate data
+  1) Generate data
 
   #Generate uniform distribution
   sample_1 <- runif(n_1, 0, 5)
