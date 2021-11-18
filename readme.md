@@ -107,7 +107,11 @@ Permutation Test
 
 
 ## Wilcoxon Signed-Rank (single-sample or paired-sample data)
-
+wilcox.test(x, y = NULL,
+            alternative = c("two.sided", "less", "greater"),
+            mu = 0, paired = FALSE, exact = NULL, correct = TRUE,
+            conf.int = FALSE, conf.level = 0.95,
+            tol.root = 1e-4, digits.rank = Inf, ...)
 
 ## Levene's Test
 
