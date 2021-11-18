@@ -74,7 +74,7 @@ sim_ci <- function(n_1, n_2){
   
   
 
-## Run simulation function (returns TRUE or FALSE)
+# Run simulation function (returns TRUE or FALSE)
 sim_ci(n_1 = 5, n_2 = 5)
 
 
@@ -83,7 +83,7 @@ ci_values_valid <- replicate(50000, sim_ci(n_1 = 5, n_2 = 5))
 mean(ci_values_valid)
 
 
-Permutation Test
+## Permutation Test
 
     #example with data created from scratch
     cold <- c(1, 1, 1, 3) # number of o-ring incidents in launches < 18C
