@@ -83,7 +83,25 @@ ci_values_valid <- replicate(50000, sim_ci(n_1 = 5, n_2 = 5))
 mean(ci_values_valid)
 
 
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
 ## Permutation Test
+Permutation Test – Used when sample sizes are small and can’t reasonably say that the data is from normal populations (t-based procedure probably not valid). May use if lots of zeros when log-transformation is not recommended. Assumes null hypothesis is true and that every outcome/labeling is equally likely.
+
 
     #example with data created from scratch
     cold <- c(1, 1, 1, 3) # number of o-ring incidents in launches < 18C
@@ -104,9 +122,18 @@ mean(ci_values_valid)
     perm_tstat(o_ring_data, n1 = 4)
 
 ## Wilcoxon Rank-Sum Test (two independent samples)
+Wilcoxon Rank-Sum Test – Used to assess whether there is a ‘difference’ between two population distributions. Assumes two independent samples.
+
+wilcox.test(x, y = NULL,
+            alternative = c("two.sided", "less", "greater"),
+            mu = 0, paired = FALSE, exact = NULL, correct = TRUE,
+            conf.int = FALSE, conf.level = 0.95,
+            tol.root = 1e-4, digits.rank = Inf, ...)
 
 
 ## Wilcoxon Signed-Rank (single-sample or paired-sample data)
+Wilcoxon Signed-Rank – Used for single-sample or paired-sample data to assess whether a particular value is the ‘center’ of a distribution of values (one-sample setting) or differences (paired two-sample setting).
+
 wilcox.test(x, y = NULL,
             alternative = c("two.sided", "less", "greater"),
             mu = 0, paired = FALSE, exact = NULL, correct = TRUE,
@@ -114,9 +141,11 @@ wilcox.test(x, y = NULL,
             tol.root = 1e-4, digits.rank = Inf, ...)
 
 ## Levene's Test
+Levene's Test – Used to compare the spreads of two populations. If we’re really interested in whether two populations are the same or different, then we should consider not only their centers but also their spread
 
 
 ## Bootstrap Methods (independent representative samples)
+Bootstrap Methods – Is a method for estimating the sampling distribution from the data at hand. Assumes independent representative samples.
 
 
 
