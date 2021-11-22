@@ -122,7 +122,7 @@ Permutation Test – Used when sample sizes are small and can’t reasonably say
     perm_tstat(o_ring_data, n1 = 4)
 
 ## Wilcoxon Rank-Sum Test (two independent samples)
-Wilcoxon Rank-Sum Test – Used to assess whether there is a ‘difference’ between two population distributions. Assumes two independent samples.
+Wilcoxon Rank-Sum Test – Used to assess whether there is a ‘difference’ between two population distributions. Assumes two independent samples. Another way to phrase this is, we are testing if the two samples come from the same population.
 
 wilcox.test(x, y = NULL,
             alternative = c("two.sided", "less", "greater"),
