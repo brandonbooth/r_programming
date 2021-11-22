@@ -34,11 +34,30 @@ sample <- rnorm(n = 10, mean = 2, sd = 4)
 
 
 ## Student's t-Test
+t.test() – Used to perform one and two sample test on sample from population. The test is based upon the t-distribution which is not the same as normal distribution. It is common that we do not know the values for the entire population so t-distribution is a better approximation.
+
+
 t.test(x, y = NULL,
        alternative = c("two.sided", "less", "greater"),
        mu = 0, paired = FALSE, var.equal = FALSE,
        conf.level = 0.95, ...)
        
+## Proportions Test
+prop.test() – This test is used when we have a large enough sample size. Since prop.test assumes normal distribution, if nπ ≥ 10 and n(1 − π) ≥ 10, the Normal approximation works 
+quite well.
+
+
+## Binomial Test
+binom.test() – Can be used instead of prop.test but is computationally expensive. Binom.test is better than prop.test when sample size is small.
+
+
+Inference of the median – We can use binom.test and prop.test to obtain the p-value values that fall within a defined range by labeling them as successes. We cannot use the provided confidence intervals from these tests so must determine confidence interval of median by using the formula  provided in lecture relative to the sample median.
+
+
+
+![image](https://user-images.githubusercontent.com/10317539/142796889-2edf41c8-a5d6-481a-bc18-c6364ae04be7.png)
+
+
        
 ## R Simulation - Welch Two Sample t-test
 
