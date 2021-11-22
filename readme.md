@@ -53,8 +53,11 @@ binom.test() – Can be used instead of prop.test but is computationally expensi
 
 Inference of the median – We can use binom.test and prop.test to obtain the p-value values that fall within a defined range by labeling them as successes. We cannot use the provided confidence intervals from these tests so must determine confidence interval of median by using the formula  provided in lecture relative to the sample median.
 
-       
-## R Simulation - Welch Two Sample t-test
+
+## Welch Two Sample t-test
+t.test(x,y)
+
+### R Simulation - Welch Two Sample t-test
 
 Consider two populations:
 
