@@ -18,15 +18,12 @@ R Documentation
 ?factorial. --> will bring you to help page
 ?runif()
 
+Read Data from file:
+yrbss_2017 <- readRDS("yrbss_2017.rds")
 
+Remove Na from list:
+is.na(yrbss_2007[select, "bmi"])
 
-
-
-x: ```x```
-
-```sh
-x
-```
 
 ## Generate and assign Normal Distribution to sample vector
 sample <- rnorm(n = 10, mean = 2, sd = 4)
