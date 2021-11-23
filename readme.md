@@ -19,10 +19,12 @@ R Documentation
 ?runif()
 
 Read Data from file:
-       yrbss_2017 <- readRDS("yrbss_2017.rds")
+
+yrbss_2017 <- readRDS("yrbss_2017.rds")
 
 Remove Na from list:
-       is.na(yrbss_2007[select, "bmi"])
+
+is.na(yrbss_2007[select, "bmi"])
 
 
 ## Generate and assign Normal Distribution to sample vector
