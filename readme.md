@@ -22,7 +22,7 @@ Read Data from file:
 
 yrbss_2017 <- readRDS("yrbss_2017.rds")
 
-Remove Na from list:
+Checks if Na from list:
 
 is.na(yrbss_2007[select, "bmi"])
 
