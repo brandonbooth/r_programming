@@ -82,7 +82,6 @@ sim_ci <- function(n_1, n_2){
   upper <- ci[2]
   lower < delta & upper > delta
   
-  
 
 # Run simulation function (returns TRUE or FALSE)
 sim_ci(n_1 = 5, n_2 = 5)
