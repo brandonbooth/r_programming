@@ -44,7 +44,7 @@ quite well.
 ## Binomial Test
 **binom.test()** – Can be used instead of prop.test but is computationally expensive. Binom.test is better than prop.test when sample size is small.
 
-Inference of the median – We can use binom.test and prop.test to obtain the p-value values that fall within a defined range by labeling them as successes. We cannot use the provided confidence intervals from these tests so must determine confidence interval of median by using the formula  provided in lecture relative to the sample median.
+**Inference of the median** – We can use binom.test and prop.test to obtain the p-value values that fall within a defined range by labeling them as successes. We cannot use the provided confidence intervals from these tests so must determine confidence interval of median by using the formula  provided in lecture relative to the sample median.
 
 
 ## Welch Two Sample t-test
@@ -94,7 +94,7 @@ mean(ci_values_valid)
 
 
 ## Permutation Test
-Permutation Test – Used when sample sizes are small and can’t reasonably say that the data is from normal populations (t-based procedure probably not valid). May use if lots of zeros when log-transformation is not recommended. Assumes null hypothesis is true and that every outcome/labeling is equally likely.
+**Permutation Test** – Used when sample sizes are small and can’t reasonably say that the data is from normal populations (t-based procedure probably not valid). May use if lots of zeros when log-transformation is not recommended. Assumes null hypothesis is true and that every outcome/labeling is equally likely.
 
 
     #example with data created from scratch
@@ -116,7 +116,7 @@ Permutation Test – Used when sample sizes are small and can’t reasonably say
     perm_tstat(o_ring_data, n1 = 4)
 
 ## Wilcoxon Rank-Sum Test (two independent samples)
-Wilcoxon Rank-Sum Test – Used to assess whether there is a ‘difference’ between two population distributions. Assumes two independent samples. Another way to phrase this is, we are testing if the two samples come from the same population.
+**Wilcoxon Rank-Sum Test** – Used to assess whether there is a ‘difference’ between two population distributions. Assumes two independent samples. Another way to phrase this is, we are testing if the two samples come from the same population.
 
 wilcox.test(x, y = NULL,
             alternative = c("two.sided", "less", "greater"),
@@ -126,7 +126,7 @@ wilcox.test(x, y = NULL,
 
 
 ## Wilcoxon Signed-Rank (single-sample or paired-sample data)
-Wilcoxon Signed-Rank – Used for single-sample or paired-sample data to assess whether a particular value is the ‘center’ of a distribution of values (one-sample setting) or differences (paired two-sample setting).
+**Wilcoxon Signed-Rank** – Used for single-sample or paired-sample data to assess whether a particular value is the ‘center’ of a distribution of values (one-sample setting) or differences (paired two-sample setting).
 
 wilcox.test(x, y = NULL,
             alternative = c("two.sided", "less", "greater"),
