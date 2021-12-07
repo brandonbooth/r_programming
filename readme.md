@@ -17,10 +17,13 @@ A "?" infront of function will display help documentation
 ?runif()
 
 Read Data from file:
+
 yrbss_2017 <- readRDS("yrbss_2017.rds")
 
 Using !is.na to remove na values from q88 field and assign remaining values to sleep from 2007 dataset:
+
 sleep_2007 <- yrbss_2007$q88[!is.na(yrbss_2007$q88)]
+
 
 ## Generate and assign Normal Distribution to sample vector
 sample <- rnorm(n = 10, mean = 2, sd = 4)
@@ -40,7 +43,6 @@ quite well.
 
 ## Binomial Test
 **binom.test()** – Can be used instead of prop.test but is computationally expensive. Binom.test is better than prop.test when sample size is small.
-
 
 Inference of the median – We can use binom.test and prop.test to obtain the p-value values that fall within a defined range by labeling them as successes. We cannot use the provided confidence intervals from these tests so must determine confidence interval of median by using the formula  provided in lecture relative to the sample median.
 
@@ -86,24 +88,9 @@ sim_ci <- function(n_1, n_2){
 sim_ci(n_1 = 5, n_2 = 5)
 
 
-#Replicate simulation and calculate proportion of values within the CI
+# Replicate simulation and calculate proportion of values within the CI
 ci_values_valid <- replicate(50000, sim_ci(n_1 = 5, n_2 = 5))
 mean(ci_values_valid)
-
-
-
-
-
-
- 
-
-
- 
-
-
-
-
- 
 
 
 
