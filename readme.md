@@ -83,11 +83,11 @@ sim_ci <- function(n_1, n_2){
   lower < delta & upper > delta
   
 
-# Run simulation function (returns TRUE or FALSE)
+### Run simulation function (returns TRUE or FALSE)
 sim_ci(n_1 = 5, n_2 = 5)
 
 
-# Replicate simulation and calculate proportion of values within the CI
+### Replicate simulation and calculate proportion of values within the CI
 ci_values_valid <- replicate(50000, sim_ci(n_1 = 5, n_2 = 5))
 mean(ci_values_valid)
 
