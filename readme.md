@@ -9,32 +9,24 @@ by [Brandon Booth](https://brandon-booth.com/) - Fall 2021
 **Helpful links:**
 - https://rstudio.cloud/learn/primers/1.2
 
-> Note: TBD...
 
 ## GettingStarted
 
-
 R Documentation
-?factorial. --> will bring you to help page
+A "?" infront of function will display help documentation
 ?runif()
 
 Read Data from file:
-
 yrbss_2017 <- readRDS("yrbss_2017.rds")
 
-Checks if Na from list:
-
-is.na(yrbss_2007[select, "bmi"])
-
+Using !is.na to remove na values from q88 field and assign remaining values to sleep from 2007 dataset:
+sleep_2007 <- yrbss_2007$q88[!is.na(yrbss_2007$q88)]
 
 ## Generate and assign Normal Distribution to sample vector
 sample <- rnorm(n = 10, mean = 2, sd = 4)
 
-
-
 ## Student's t-Test
-t.test() – Used to perform one and two sample test on sample from population. The test is based upon the t-distribution which is not the same as normal distribution. It is common that we do not know the values for the entire population so t-distribution is a better approximation.
-
+**t.test()** – Used to perform one and two sample test on sample from population. The test is based upon the t-distribution which is not the same as normal distribution. It is common that we do not know the values for the entire population so t-distribution is a better approximation.
 
 t.test(x, y = NULL,
        alternative = c("two.sided", "less", "greater"),
@@ -42,12 +34,12 @@ t.test(x, y = NULL,
        conf.level = 0.95, ...)
        
 ## Proportions Test
-prop.test() – This test is used when we have a large enough sample size. Since prop.test assumes normal distribution, if nπ ≥ 10 and n(1 − π) ≥ 10, the Normal approximation works 
+**prop.test()** – This test is used when we have a large enough sample size. Since prop.test assumes normal distribution, if nπ ≥ 10 and n(1 − π) ≥ 10, the Normal approximation works 
 quite well.
 
 
 ## Binomial Test
-binom.test() – Can be used instead of prop.test but is computationally expensive. Binom.test is better than prop.test when sample size is small.
+**binom.test()** – Can be used instead of prop.test but is computationally expensive. Binom.test is better than prop.test when sample size is small.
 
 
 Inference of the median – We can use binom.test and prop.test to obtain the p-value values that fall within a defined range by labeling them as successes. We cannot use the provided confidence intervals from these tests so must determine confidence interval of median by using the formula  provided in lecture relative to the sample median.
