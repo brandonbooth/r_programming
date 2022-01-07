@@ -17,8 +17,10 @@ A "?" infront of function will display help documentation
 ?runif()
 
 Read Data from file:
-
+rds
 yrbss_2017 <- readRDS("yrbss_2017.rds")
+csv
+sport_heights <- read.csv("sport_heights.csv")
 
 Using !is.na to remove na values from q88 field and assign remaining values to sleep from 2007 dataset:
 
