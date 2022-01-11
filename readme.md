@@ -141,6 +141,8 @@ wilcox.test(x, y = NULL,
 ## Levene's Test
 Levene's Test – Used to compare the spreads of two populations. If we’re really interested in whether two populations are the same or different, then we should consider not only their centers but also their spread
 
+library(car)
+leveneTest(Lifetime~Diet, data=case0501)
 
 ## Bootstrap Methods (independent representative samples)
 Bootstrap Methods – Is a method for estimating the sampling distribution from the data at hand. Assumes independent representative samples.
