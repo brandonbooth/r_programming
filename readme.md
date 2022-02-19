@@ -29,6 +29,12 @@ Using !is.na to remove na values from q88 field and assign remaining values to s
 sleep_2007 <- yrbss_2007$q88[!is.na(yrbss_2007$q88)]
 
 
+Check type of an Object:
+typeof() 
+
+Check structure of data:
+str()
+
 ## Generate and assign Normal Distribution to sample vector
 sample <- rnorm(n = 10, mean = 2, sd = 4)
 
