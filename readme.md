@@ -8,6 +8,7 @@ by [Brandon Booth](https://brandon-booth.com/) - Fall 2021
 
 **Helpful links:**
 - https://rstudio.cloud/learn/primers/1.2
+- https://r4ds.had.co.nz/
 
 
 ## GettingStarted
