@@ -156,8 +156,5 @@ leveneTest(Lifetime~Diet, data=case0501)
 ## Bootstrap Methods (independent representative samples)
 Bootstrap Methods – Is a method for estimating the sampling distribution from the data at hand. Assumes independent representative samples.
 
-## Geoms
-help(package = "ggplot2")
-
 
 
